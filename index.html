@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRILL 1 Francisco</title>
+
+   
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #2d3a5f;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #61dafb;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0 5px;
+            font-size: 1em;
+            color: #cfd8dc;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #1b2438;
+            color: white;
+            font-size: 1em;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            background-color: #26314e;
+        }
+
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        #result {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Simple Average Calculator</h2>
+
+        <p>Score 1:</p>
+        <input type="text" id="score1">
+
+        <p>Score 2:</p>
+        <input type="text" id="score2">
+
+        <button id="compute_button">COMPUTE</button>
+
+        <p>Average: <span id="average"></span></p>
+        <p>Passed? <span id="result"></span></p>
+    </div>
+
+    
+    <script type="py" src="main.py"></script>
+</body>
+</html>
